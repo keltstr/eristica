@@ -19,7 +19,7 @@ class ActiveRecordConfig extends \samson\core\Config
 {
 	public $__module = 'activerecord';
 
-	public $name 	= 'playtoptv';
+	public $name 	= 'evristika.ru';
 	public $login 	= 'samsonos';
 	public $pwd 	= 'AzUzrcVe4LJJre9f';	
 }
