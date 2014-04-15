@@ -1,3 +1,0 @@
-<li class="<?php iv('css')?>locale-<?php v('locale')?> <?php iv('active')?>">
-    <a href="/<?php v('url')?>"></a>
-</li>

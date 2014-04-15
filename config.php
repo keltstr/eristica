@@ -19,7 +19,7 @@ class ActiveRecordConfig extends \samson\core\Config
 {
 	public $__module = 'activerecord';
 
-	public $name 	= 'evristika.ru';
+	public $name 	= 'eristica.ru';
 	public $login 	= 'samsonos';
 	public $pwd 	= 'AzUzrcVe4LJJre9f';	
 }
@@ -29,5 +29,17 @@ class CompressorConfig extends \samson\core\Config
 {
     public $__module = 'compressor';
 
-    public $output = '/var/www.final/playtop.tv/www/';
+    public $output = '/var/www.final/evristika.ru/www/';
+}
+
+/** Конфигурация DEV для ActiveRecord */
+class DeployConfig extends \samson\core\Config
+{
+    public $__module = 'deploy';
+
+    public $host 	= 'samsonos.com';
+    public $wwwroot	= '/var/www/eristica.samsonos.com/www/';
+    public $username= 'vitaly';
+    public $password= 'Vital29121987';
+
 }
