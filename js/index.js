@@ -27,6 +27,9 @@ s('.invite').pageInit(function(p){
 s('.support').pageInit(function(btn){
     btn.click(function(){
 
+        if(btn.html()=='Вопросы?')btn.html('Подписаться');
+        else btn.html('Вопросы?');
+
         s('.container.subscribe').toggle();
         s('.container.question').toggle();
 
