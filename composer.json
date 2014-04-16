@@ -1,0 +1,15 @@
+{
+    "name":"samsonos/eristica",
+    "description":"eristica landing page",
+    "license":"proprietary",
+    "minimum-stability":"dev",
+    "require": {
+        "samsonos/php_core": "*",
+        "samsonos/php_resourcer": "*",
+        "samsonos/php_compressor": "*",
+        "samsonos/php_less": "*",
+        "samsonos/js_core": "*",   
+        "samsonos/php_minify": "*",
+        "samsonos/php_deploy": "*"
+    }
+}

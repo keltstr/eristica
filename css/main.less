@@ -1,0 +1,109 @@
+.invite {
+  @fieldHeight:40px;
+
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:500px;
+  height:500px;
+  margin-left: -250px;
+  margin-top: -250px;
+
+  .container {
+    background-color: rgba(66,58,43,0.7);
+    position:relative;
+    color:white;
+    padding:0 50px 50px 50px;
+    height:100%;
+
+    .input {
+      margin-top:-30px;
+    }
+
+    &.question .input {
+      margin-top:20px;
+
+      textarea {
+        height: 130px;
+        width:100%;
+        padding:5px;
+        border-bottom:2px solid rgba(0,0,0,0.8);
+      }
+    }
+
+    .logo { display:block; text-align: center;}
+    .spoiler { text-align: left; margin: 25px 0px; font-size:18px;  }
+
+    input {
+      border:0px;
+      width:100%;
+      height:@fieldHeight;
+      padding:0px 5px;
+
+      &:focus { outline: none;}
+      &.name { border-bottom:2px solid rgba(0,0,0,0.8); }
+    }
+
+    .submit{
+      width:100%;
+      border:0;
+      background-color: black;
+      color:white;
+      margin-top:4px;
+      height:@fieldHeight;
+
+      &:hover { .opacity(0.8); }
+    }
+
+    .complete {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .call-to-action {
+      position: absolute;
+      bottom:25px;
+      left:25px;
+      right:25px;
+      text-align: right;
+
+      a { color:white; text-decoration: underline; }
+    }
+  }
+}
+
+.mobile {
+  position:absolute;
+  right:25px;
+  top:50%;
+  width:200px;
+  height: 300px;
+  margin-top:-150px;
+
+  .comming-soon { font-size: 25px; text-align: center; color:white; margin-bottom:10px; }
+
+  a{&:hover { .opacity(0.8); }}
+}
+
+.info {
+  position:absolute;
+  right:25px;
+  top:25px;
+  width:40px;
+  height:40px;
+  display: block;
+  background-color: white;
+  color:black;
+  font-style: italic;
+  font-size: 22px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.support {
+  position:absolute;
+  bottom:25px;
+  right:25px;
+  color:white;
+  text-decoration: underline;
+}

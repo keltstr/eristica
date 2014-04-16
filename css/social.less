@@ -1,0 +1,53 @@
+.social {
+  width:100%;
+  text-align: center;
+  margin-top: 25px;
+
+  &>a {
+    display: inline-block;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height:41px;
+    width:41px;
+
+    &.tw{ background-image: url(../images/small/twitter.png); &:hover {background-image: url(../images/small/twitter_hover.png);}}
+    &.vk{ background-image: url(../images/small/vk.png); &:hover {background-image: url(../images/small/vk_hover.png);}}
+    &.fb{ background-image: url(../images/small/facebook.png); &:hover {background-image: url(../images/small/facebook_hover.png);}}
+    &.in{ background-image: url(../images/small/instagram.png); &:hover {background-image: url(../images/small/instagram_hover.png);}}
+
+    &.tw{ background-image: url(../images/small/twitter_hover.png); &:hover {background-image: url(../images/small/twitter.png);}}
+    &.vk{ background-image: url(../images/small/vk_hover.png); &:hover {background-image: url(../images/small/vk.png);}}
+    &.fb{ background-image: url(../images/small/facebook_hover.png); &:hover {background-image: url(../images/small/facebook.png);}}
+    &.in{ background-image: url(../images/small/instagram_hover.png); &:hover {background-image: url(../images/small/instagram.png);}}
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .spoiler { text-align: left; margin: 25px 0px 15px 0px; font-size:18px;  }
+
+  .container {
+    .input {
+      margin-top:-45px;
+    }
+  }
+
+  .social {
+    margin-top: 10px;
+
+    &>a {
+      height:81px;
+      width:24%;
+
+      &.tw{ background-image: url(../images/twitter.png); &:hover {background-image: url(../images/twitter_hover.png);}}
+      &.vk{ background-image: url(../images/vk.png); &:hover {background-image: url(../images/vk_hover.png);}}
+      &.fb{ background-image: url(../images/facebook.png); &:hover {background-image: url(../images/facebook_hover.png);}}
+      &.in{ background-image: url(../images/instagram.png); &:hover {background-image: url(../images/instagram_hover.png);}}
+
+      &.tw{ background-image: url(../images/twitter_hover.png); &:hover {background-image: url(../images/twitter.png);}}
+      &.vk{ background-image: url(../images/vk_hover.png); &:hover {background-image: url(../images/vk.png);}}
+      &.fb{ background-image: url(../images/facebook_hover.png); &:hover {background-image: url(../images/facebook.png);}}
+      &.in{ background-image: url(../images/instagram_hover.png); &:hover {background-image: url(../images/instagram.png);}}
+    }
+
+  }
+}
