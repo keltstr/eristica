@@ -1,15 +1,25 @@
-<?php 
-/** Файл конфигурации */
+<?php
+/** Configuration */
 
-// Define path to SamsonPHP modules
-if( !defined('PHP_P')) define('PHP_P', 'vendor/SamsonPHP/');
-// Define path to SamsonJS modules
-if( !defined('JS_P'))  define('JS_P', 'vendor/SamsonJS/');
-// Define path to SamsonCMS modules
-if( !defined('CMS_P')) define('CMS_P', '../../SamsonCMS/');
+// If this is SamsonOS development web-server
+if ($_SERVER['SERVER_ADDR'] == '192.168.1.99') {
+    // Set specific path to local modules avoiding composer module duplication in every project
+    define('__SAMSON_VENDOR_PATH', '/var/www.prod/vendor/');
+    define('__SAMSON_CORE_PATH', __SAMSON_VENDOR_PATH.'/samsonos/php/core/');
+}
+
+// Define default path to vendor dir
+if (!defined('__SAMSON_VENDOR_PATH')) {
+    define('__SAMSON_VENDOR_PATH', 'vendor/');
+}
+
+// Define default path to samsonos/php_core dir
+if (!defined('__SAMSON_CORE_PATH')) {
+    define('__SAMSON_CORE_PATH', 'vendor/samsonos/php_core/');
+}
 
 // Подключить фреймворк SamsonPHP
-require( PHP_P.'core/samson.php');
+require( __SAMSON_CORE_PATH.'samson.php');
 
 // Установим локализации сайта
 setlocales( 'en' );
@@ -29,7 +39,7 @@ class CompressorConfig extends \samson\core\Config
 {
     public $__module = 'compressor';
 
-    public $output = '/var/www.final/evristika.ru/www/';
+    public $output = '/var/www.final/eristica.dev/www/';
 }
 
 /** Конфигурация DEV для ActiveRecord */
