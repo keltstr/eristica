@@ -6,3 +6,4 @@ cache/*
 vendor/*
 cms/*
 composer.lock
+cms
