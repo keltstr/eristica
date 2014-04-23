@@ -24,16 +24,6 @@ require( __SAMSON_CORE_PATH.'samson.php');
 // Установим локализации сайта
 setlocales( 'en' );
 
-/** Конфигурация DEV для ActiveRecord */
-class ActiveRecordConfig extends \samson\core\Config
-{
-	public $__module = 'activerecord';
-
-	public $name 	= 'eristica.ru';
-	public $login 	= 'samsonos';
-	public $pwd 	= 'AzUzrcVe4LJJre9f';	
-}
-
 /** Config for compressor */
 class CompressorConfig extends \samson\core\Config
 {
@@ -49,7 +39,7 @@ class DeployConfig extends \samson\core\Config
 
     public $host 	= 'samsonos.com';
     public $wwwroot	= '/var/www/eristica.samsonos.com/www/';
-    public $username= 'vitaly';
-    public $password= 'Vital29121987';
+    public $username= '';
+    public $password= '';
 
 }
